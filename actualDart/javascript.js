@@ -17,18 +17,6 @@ addEventListener('mousemove', event => {
     mouse.y = event.clientY
 })
 
-//namen
-window.onload = function(){
-    /*ctx.font = "100px Arial";
-    ctx.fillStyle = "black"
-    ctx.fillText(name1,100,window.innerHeight/2-200);
-    ctx.fillText(name2,1300,window.innerHeight/2-200);
-    console.log(name1, name2);*/
-
-    let hiername = name1;
-    console.log(name1);
-}
-
 
 //variables
 let smallPoints1 = 301;
@@ -38,16 +26,16 @@ let bigPoints2 = 0;
 
 //Display current points
 //big
-ctx.font = "100px Arial";
+ctx.font = "50px Arial";
 ctx.fillStyle = "black"
-ctx.fillText(smallPoints1,window.innerWidth/2-450,window.innerHeight/2-200);
-ctx.fillText(smallPoints2,window.innerWidth/2+200,window.innerHeight/2-200);
+ctx.fillText(smallPoints1,window.innerWidth/2-450,800);
+ctx.fillText(smallPoints2,window.innerWidth/2+200,800);
 
 //small
-ctx.font = "60px Arial";
+ctx.font = "20px Arial";
 ctx.fillStyle = "black"
-ctx.fillText(bigPoints1,window.innerWidth/2-390,window.innerHeight/2-100);
-ctx.fillText(bigPoints2,window.innerWidth/2+260,window.innerHeight/2-100);
+ctx.fillText(bigPoints1,window.innerWidth/2-390,1000);
+ctx.fillText(bigPoints2,window.innerWidth/2+260,1000);;
 
 
 //design
@@ -101,16 +89,16 @@ let submitbutton = new CanvasSubmit( canvas, {
     		ctx.clearRect(500,175,860,300);
 
     		//Display current points
-			//big
-			ctx.font = "50px Arial";
-			ctx.fillStyle = "black"
-			ctx.fillText(smallPoints1,window.innerWidth/2-450,800);
-			ctx.fillText(smallPoints2,window.innerWidth/2+200,800);
+		//big
+		ctx.font = "50px Arial";
+		ctx.fillStyle = "black"
+		ctx.fillText(smallPoints1,window.innerWidth/2-450,800);
+		ctx.fillText(smallPoints2,window.innerWidth/2+200,800);
 
-    			ctx.font = "20px Arial";
-			ctx.fillStyle = "black"
-			ctx.fillText(bigPoints1,window.innerWidth/2-390,800);
-			ctx.fillText(bigPoints2,window.innerWidth/2+260,800);
+    		ctx.font = "20px Arial";
+		ctx.fillStyle = "black"
+		ctx.fillText(bigPoints1,window.innerWidth/2-390,1000);
+		ctx.fillText(bigPoints2,window.innerWidth/2+260,1000);
     	}
     } )
 } );
